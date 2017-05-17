@@ -1,0 +1,64 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mhealth365.demander.EcgSdkDemo" >
+    
+    <item
+        android:id="@+id/action_settings_recordStart"
+        android:orderInCategory="100"
+        android:title="开始记录"/>
+    <item
+        android:id="@+id/action_settings_recordStop"
+        android:orderInCategory="100"
+        android:title="结束记录"/>
+    <item
+        android:id="@+id/action_settings_datasource"
+        android:orderInCategory="100"
+        android:title="数据回顾"/>
+    <item
+        android:id="@+id/action_settings_screen"
+        android:orderInCategory="100"
+        android:title="屏幕尺寸"/>
+    <item
+        android:id="@+id/action_settings_delay"
+        android:orderInCategory="100"
+        android:title="开始记录延迟时间"/>
+    <item
+        android:id="@+id/action_settings_switch"
+        android:orderInCategory="100"
+        android:title="切换为USB模式"/>
+    <item
+        android:id="@+id/action_settings_50Hz"
+        android:orderInCategory="100"
+        android:title="工频滤波50Hz"/>
+    <item
+        android:id="@+id/action_settings_60Hz"
+        android:orderInCategory="100"
+        android:title="工频滤波60Hz"/>
+    <item
+        android:id="@+id/action_settings_25Hz"
+        android:orderInCategory="100"
+        android:title="肌电滤波25Hz"/>
+    <item
+        android:id="@+id/action_settings_35Hz"
+        android:orderInCategory="100"
+        android:title="肌电滤波35Hz"/>
+    <item
+        android:id="@+id/action_settings_40Hz"
+        android:orderInCategory="100"
+        android:title="肌电滤波40Hz"/>
+    <item
+        android:id="@+id/action_settings_baseline"
+        android:orderInCategory="100"
+        android:title="基线滤波"/>
+    <item
+        android:id="@+id/action_settings_05Hz"
+        android:orderInCategory="100"
+        android:title="硬件0.5Hz滤波"/>
+    
+    
+    <item
+        android:id="@+id/action_settings_recordPng"
+        android:orderInCategory="100"
+        android:title="心电图绘制"/>
+
+</menu>

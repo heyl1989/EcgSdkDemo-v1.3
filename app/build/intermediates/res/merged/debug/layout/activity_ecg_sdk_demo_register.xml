@@ -1,0 +1,198 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mhealth365.demander.EcgSdkUSBDemo" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/editOpenId_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* openid：" />
+
+            <EditText
+                android:id="@+id/editOpenId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/editAccountName_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*用户名（手机号或email）" />
+
+            <EditText
+                android:id="@+id/editAccountName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/editName_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*姓名" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="anonymous" />
+
+            <TextView
+                android:id="@+id/editCId_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身份证：" />
+
+            <EditText
+                android:id="@+id/editCid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="000111222333444555" />
+
+            <TextView
+                android:id="@+id/editPhone_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话号码" />
+
+            <EditText
+                android:id="@+id/editPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="13101230001" />
+
+            <TextView
+                android:id="@+id/editEmail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email：" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="test@mhealth365.com" />
+
+            <TextView
+                android:id="@+id/editAge_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年龄：" />
+
+            <EditText
+                android:id="@+id/editAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18" />
+
+            <TextView
+                android:id="@+id/editSex_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别：（男、女、保密）" />
+
+            <EditText
+                android:id="@+id/editSex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="男" />
+
+            <TextView
+                android:id="@+id/editHeight_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身高（cm）：" />
+
+            <EditText
+                android:id="@+id/editHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="175" />
+
+            <TextView
+                android:id="@+id/editWeight_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="体重（kg）：" />
+
+            <EditText
+                android:id="@+id/editWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="75" />
+
+            <TextView
+                android:id="@+id/editHeartDisease_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="心脏病史：（有、无、未知）：" />
+
+            <EditText
+                android:id="@+id/editHeartDisease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="无" />
+
+            <TextView
+                android:id="@+id/editAppeal_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="诉求：" />
+
+            <EditText
+                android:id="@+id/editAppeal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="无" />
+
+            <TextView
+                android:id="@+id/editMedicalHistory_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="病史：" />
+
+            <EditText
+                android:id="@+id/editMedicalHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="无" />
+
+            <TextView
+                android:id="@+id/editAddress_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地址：" />
+
+            <EditText
+                android:id="@+id/editAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="南京" />
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="注册" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

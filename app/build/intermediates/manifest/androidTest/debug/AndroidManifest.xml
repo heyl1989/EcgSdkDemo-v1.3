@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vodone.o2o.hulianwangyy_guizhou.demander.test">
+
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="18" />
+
+    <application>
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
+                     android:targetPackage="com.vodone.o2o.hulianwangyy_guizhou.demander"
+                     android:handleProfiling="false"
+                     android:functionalTest="false"
+                     android:label="Tests for com.vodone.o2o.hulianwangyy_guizhou.demander"/>
+</manifest>

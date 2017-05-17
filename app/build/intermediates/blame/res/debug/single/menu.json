@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\build\\intermediates\\res\\merged\\debug\\menu\\ecg_sdk_demo_bluetooth.xml",
+        "source": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\menu\\ecg_sdk_demo_bluetooth.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\build\\intermediates\\res\\merged\\debug\\menu\\ecg_sdk_demo.xml",
+        "source": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\menu\\ecg_sdk_demo.xml"
+    }
+]

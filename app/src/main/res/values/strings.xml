@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <string name="paired">已匹配</string>
+   <!--蓝牙连接  -->
+    <string name="doing_connect_bluetooth">蓝牙连接中~~~</string>
+    <string name="no_bluetooth_device">没有蓝牙设备</string>
+    <string name="has_bluetooth_device">有蓝牙设备</string>
+    <string name="start_bluetooth_device">正在启动蓝牙设备</string>
+    <string name="no_find_bluetooth_device">没有找到设备</string>
+    <string name="bluetooth_connect_failure">蓝牙连接失败</string>
+    <string name="bluetooth_build_connect">蓝牙建立连接</string>
+    <string name="bluetooth_disconnect">蓝牙连接断开</string>
+    <string name="get_bluetooth_dev_info">获取设备信息中....</string>
+    <string name="try_again">重试</string>
+    <string name="scanning">搜索蓝牙设备中...</string>
+    <string name="select_device">选择一个蓝牙设备连接</string>
+    <string name="none_paired">没有已匹配的设备</string>
+    <string name="none_found">没有发现设备</string>
+    <string name="title_paired_devices">已匹配设备</string>
+    <string name="title_other_devices">其他可见设备</string>
+    <string name="button_scan">刷新</string>
+    <string name="scan">扫描</string>
+    <string name="cancel">取消</string>
+    <string name="ble_not_supported">Bluetooth Low Energy not supported</string> 
+</resources>

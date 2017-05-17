@@ -1,0 +1,291 @@
+/*
+ * Copyright (C) 2013 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.vodone.o2o.hulianwangyy_guizhou.demander;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.mhealth365.osdk.EcgOpenApiHelper;
+import com.mhealth365.osdk.EcgOpenApiCallback.BluetoothCallback;
+import android.app.Activity;
+import android.bluetooth.BluetoothDevice;
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class BleDeviceListActivity extends Activity implements BluetoothCallback {
+	
+	public static final String TAG = BleDeviceListActivity.class.getSimpleName();
+	private TextView mEmptyList;
+	private List<BluetoothDevice> deviceList;
+	private DeviceAdapter deviceAdapter;
+//	private ServiceConnection onService = null;
+	private Map<String, Integer> devRssiValues;
+	private static final long SCAN_PERIOD = 10000; // 10 seconds
+	private Handler mHandler;
+	private boolean mScanning;
+	private EcgOpenApiHelper mOsdkHelper;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		Log.d(TAG, "---onCreate---");
+		mOsdkHelper = EcgOpenApiHelper.getInstance();
+		mOsdkHelper.createBluetoothDiscovery(this);
+		
+		getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.title_bar);
+		setContentView(R.layout.device_list);
+		android.view.WindowManager.LayoutParams layoutParams = this.getWindow().getAttributes();
+		layoutParams.gravity = Gravity.TOP;
+		layoutParams.y = 200;
+		mHandler = new Handler();
+		// Use this check to determine whether BLE is supported on the device. Then you can selectively disable BLE-related features.
+//		if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)) {
+//			Toast.makeText(this, R.string.ble_not_supported, Toast.LENGTH_SHORT).show();
+//			finish();
+//		}
+
+		if (!mOsdkHelper.isSupportBluetooth()) {
+			Toast.makeText(this, R.string.ble_not_supported, Toast.LENGTH_SHORT).show();
+			finish();
+			return;
+		}
+		mOsdkHelper.enableBluetooth();
+		
+		populateList();
+		mEmptyList = (TextView) findViewById(R.id.empty);
+		Button cancelButton = (Button) findViewById(R.id.btn_cancel);
+		cancelButton.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				if (mScanning) {
+					finish();
+				} else {
+					scanLeDevice(true);
+				}
+			}
+		});
+	}
+
+	private void populateList() {
+		Log.d(TAG, "populateList");
+		deviceList = new ArrayList<BluetoothDevice>();
+		deviceAdapter = new DeviceAdapter(this, deviceList);
+		devRssiValues = new HashMap<String, Integer>();
+
+		ListView newDevicesListView = (ListView) findViewById(R.id.new_devices);
+		newDevicesListView.setAdapter(deviceAdapter);
+		newDevicesListView.setOnItemClickListener(mDeviceClickListener);
+
+		scanLeDevice(true);
+	}
+
+	private void scanLeDevice(final boolean enable) {
+		final Button cancelBtn = (Button) findViewById(R.id.btn_cancel);
+		if (enable) {
+			// Stops scanning after a pre-defined scan period.
+			mHandler.postDelayed(new Runnable() {
+				@Override
+				public void run() {
+					mScanning = false;
+					mOsdkHelper.stopDiscovery();
+					cancelBtn.setText(R.string.scan);
+				}
+			}, SCAN_PERIOD);
+			mScanning = true;
+			mOsdkHelper.startDiscovery();
+			cancelBtn.setText(R.string.cancel);
+		} else {
+			mScanning = false;
+			mOsdkHelper.stopDiscovery();
+			cancelBtn.setText(R.string.scan);
+		}
+	}
+
+	private void addDevice(BluetoothDevice device, int rssi) {
+		boolean deviceFound = false;
+
+		for (BluetoothDevice listDev : deviceList) {
+			if (listDev.getAddress().equals(device.getAddress())) {
+//				byte[] pin = new byte[] { '0', '1', '2', '3' };
+//				device.setPin(pin);
+				deviceFound = true;
+				break;
+			}
+		}
+
+		devRssiValues.put(device.getAddress(), rssi);
+		if (!deviceFound) {
+			deviceList.add(device);
+			mEmptyList.setVisibility(View.GONE);
+			deviceAdapter.notifyDataSetChanged();
+		}
+	}
+
+	@Override
+	public void onStart() {
+		super.onStart();
+	}
+
+	@Override
+	public void onStop() {
+		super.onStop();
+		mOsdkHelper.stopDiscovery();
+	}
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		mOsdkHelper.stopDiscovery();
+	}
+
+	private OnItemClickListener mDeviceClickListener = new OnItemClickListener() {
+
+		@Override
+		public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+			BluetoothDevice device = deviceList.get(position);
+			mOsdkHelper.stopDiscovery();
+
+			Bundle b = new Bundle();
+			b.putString(BluetoothDevice.EXTRA_DEVICE, deviceList.get(position).getAddress());
+			b.putParcelable(EcgOpenApiHelper.BLUETOOTH_DEVICE_OBJECT, device);
+
+			Intent result = new Intent();
+			result.putExtras(b);
+			setResult(Activity.RESULT_OK, result);
+			finish();
+		}
+	};
+
+	protected void onPause() {
+		super.onPause();
+		scanLeDevice(false);
+	}
+	
+	@Override
+	public void start() {
+	}
+	
+	@Override
+	public void foundNewDevice(final BluetoothDevice device, final int rssi) {
+		runOnUiThread(new Runnable() {
+			@Override
+			public void run() {
+				addDevice(device, rssi);
+				Log.d(TAG, "foundNewDevice");
+			}
+		});
+	}
+	
+	@Override
+	public void finished() {
+	}
+	
+
+	class DeviceAdapter extends BaseAdapter {
+		Context context;
+		List<BluetoothDevice> devices;
+		LayoutInflater inflater;
+
+		public DeviceAdapter(Context context, List<BluetoothDevice> devices) {
+			this.context = context.getApplicationContext();
+			inflater = LayoutInflater.from(context);
+			this.devices = devices;
+		}
+
+		@Override
+		public int getCount() {
+			return devices.size();
+		}
+
+		@Override
+		public Object getItem(int position) {
+			return devices.get(position);
+		}
+
+		@Override
+		public long getItemId(int position) {
+			return position;
+		}
+
+		@Override
+		public View getView(int position, View convertView, ViewGroup parent) {
+			ViewGroup vg;
+
+			if (convertView != null) {
+				vg = (ViewGroup) convertView;
+			} else {
+				vg = (ViewGroup) inflater.inflate(R.layout.device_element, null);
+			}
+
+			BluetoothDevice device = devices.get(position);
+			final TextView tvadd = ((TextView) vg.findViewById(R.id.address));
+			final TextView tvname = ((TextView) vg.findViewById(R.id.name));
+			final TextView tvpaired = (TextView) vg.findViewById(R.id.paired);
+			final TextView tvrssi = (TextView) vg.findViewById(R.id.rssi);
+
+			tvrssi.setVisibility(View.VISIBLE);
+			byte rssival = (byte) devRssiValues.get(device.getAddress()).intValue();
+			if (rssival != 0) {
+				tvrssi.setText("Rssi = " + String.valueOf(rssival));
+			}
+
+			tvname.setText(device.getName());
+			tvadd.setText(device.getAddress());
+			if (device.getBondState() == BluetoothDevice.BOND_BONDED) {
+				Log.i(TAG, "device::" + device.getName());
+				tvname.setTextColor(Color.WHITE);
+				tvadd.setTextColor(Color.WHITE);
+				tvpaired.setTextColor(Color.GRAY);
+				tvpaired.setVisibility(View.VISIBLE);
+				tvpaired.setText(R.string.paired);
+				tvrssi.setVisibility(View.VISIBLE);
+				tvrssi.setTextColor(Color.WHITE);
+
+			} else {
+				tvname.setTextColor(Color.WHITE);
+				tvadd.setTextColor(Color.WHITE);
+				tvpaired.setVisibility(View.GONE);
+				tvrssi.setVisibility(View.VISIBLE);
+				tvrssi.setTextColor(Color.WHITE);
+			}
+			return vg;
+		}
+	}
+
+	private void showMessage(String msg) {
+		Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+	}
+}

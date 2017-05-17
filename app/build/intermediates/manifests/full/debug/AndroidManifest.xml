@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vodone.o2o.hulianwangyy_guizhou.demander"
+    android:versionCode="3"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name="com.vodone.o2o.hulianwangyy_guizhou.demander.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="EcgOpenSdkDemo"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.vodone.o2o.hulianwangyy_guizhou.demander.EcgSdkBluetoothDemo"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="EcgOpenSdkDemo"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+        <activity
+            android:name="com.vodone.o2o.hulianwangyy_guizhou.demander.BleDeviceListActivity"
+            android:label="蓝牙设备列表"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <service
+            android:name="com.yikang.ble.nf51822.UartService"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.vodone.o2o.hulianwangyy_guizhou.demander.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="登录"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.vodone.o2o.hulianwangyy_guizhou.demander.EcgPngActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="心电图绘制"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.vodone.o2o.hulianwangyy_guizhou.demander.RegisterActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="注册"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.vodone.o2o.hulianwangyy_guizhou.demander.EcgDataSourceReviewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="回顾数据"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

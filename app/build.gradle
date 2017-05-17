@@ -1,0 +1,23 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.vodone.o2o.hulianwangyy_guizhou.demander"
+        minSdkVersion 14
+        targetSdkVersion 18
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles 'proguard-android.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/mhealth365-osdk-v1.3.2.jar')
+}

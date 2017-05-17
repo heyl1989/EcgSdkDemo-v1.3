@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="fill_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout_input_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/relative_layout_2" />
+    </LinearLayout>
+
+    <com.mhealth365.osdk.ecgbrowser.RealTimeEcgBrowser
+        android:id="@+id/ecgBrowser"
+        android:layout_width="fill_parent"
+        android:layout_height="40mm"
+        android:layout_weight="6" />
+
+    <!--
+      <com.mhealth365.osdk.ecgbrowser.RealTimeEcgBrowser
+        android:id="@+id/ecgBrowserSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="20mm" 
+        android:layout_weight="6"
+        />
+    -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_select_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="蓝牙设置"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_record_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="记录开始" />
+
+        <Button
+            android:id="@+id/button_record_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="记录结束" />
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="注册" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="登陆" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="蓝牙模式" />
+
+</LinearLayout>

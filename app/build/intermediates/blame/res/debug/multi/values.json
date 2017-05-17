@@ -1,0 +1,486 @@
+[
+    {
+        "outputFile": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 89,
+                        "endColumn": 57,
+                        "endOffset": 142
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 113,
+                    "endColumn": 55,
+                    "endOffset": 164
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 147,
+                        "endColumn": 55,
+                        "endOffset": 198
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 169,
+                    "endColumn": 80,
+                    "endOffset": 245
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1105,
+                        "endColumn": 80,
+                        "endOffset": 1181
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 250,
+                    "endColumn": 58,
+                    "endOffset": 304
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 463,
+                        "endColumn": 58,
+                        "endOffset": 517
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 309,
+                    "endColumn": 60,
+                    "endOffset": 365
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 402,
+                        "endColumn": 60,
+                        "endOffset": 458
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 370,
+                    "endColumn": 55,
+                    "endOffset": 421
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 522,
+                        "endColumn": 55,
+                        "endOffset": 573
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 426,
+                    "endColumn": 42,
+                    "endOffset": 464
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 988,
+                        "endColumn": 42,
+                        "endOffset": 1026
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 469,
+                    "endColumn": 37,
+                    "endOffset": 502
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1067,
+                        "endColumn": 37,
+                        "endOffset": 1100
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 507,
+                    "endColumn": 60,
+                    "endOffset": 563
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 111,
+                        "endColumn": 60,
+                        "endOffset": 167
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 568,
+                    "endColumn": 62,
+                    "endOffset": 626
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 578,
+                        "endColumn": 62,
+                        "endOffset": 636
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 631,
+                    "endColumn": 54,
+                    "endOffset": 681
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 227,
+                        "endColumn": 54,
+                        "endOffset": 277
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 686,
+                    "endColumn": 54,
+                    "endOffset": 736
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 172,
+                        "endColumn": 54,
+                        "endOffset": 222
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 741,
+                    "endColumn": 59,
+                    "endOffset": 796
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 342,
+                        "endColumn": 59,
+                        "endOffset": 397
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 801,
+                    "endColumn": 45,
+                    "endOffset": 842
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 832,
+                        "endColumn": 45,
+                        "endOffset": 873
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 847,
+                    "endColumn": 48,
+                    "endOffset": 891
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 783,
+                        "endColumn": 48,
+                        "endOffset": 827
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 896,
+                    "endColumn": 38,
+                    "endOffset": 930
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 3,
+                        "startOffset": 55,
+                        "endColumn": 37,
+                        "endOffset": 89
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 935,
+                    "endColumn": 35,
+                    "endOffset": 966
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1031,
+                        "endColumn": 35,
+                        "endOffset": 1062
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 971,
+                    "endColumn": 47,
+                    "endOffset": 1014
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 682,
+                        "endColumn": 47,
+                        "endOffset": 725
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1019,
+                    "endColumn": 52,
+                    "endOffset": 1067
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 730,
+                        "endColumn": 52,
+                        "endOffset": 778
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1072,
+                    "endColumn": 59,
+                    "endOffset": 1127
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 282,
+                        "endColumn": 59,
+                        "endOffset": 337
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1132,
+                    "endColumn": 54,
+                    "endOffset": 1182
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 933,
+                        "endColumn": 54,
+                        "endOffset": 983
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1187,
+                    "endColumn": 54,
+                    "endOffset": 1237
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 878,
+                        "endColumn": 54,
+                        "endOffset": 928
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1242,
+                    "endColumn": 40,
+                    "endOffset": 1278
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 641,
+                        "endColumn": 40,
+                        "endOffset": 677
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1283,
+                    "endLine": 31,
+                    "endColumn": 12,
+                    "endOffset": 1569
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 186,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 472
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 1574,
+                    "endLine": 34,
+                    "endColumn": 12,
+                    "endOffset": 1729
+                },
+                "from": {
+                    "file": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 510,
+                        "endLine": 17,
+                        "endColumn": 12,
+                        "endOffset": 665
+                    }
+                }
+            }
+        ]
+    }
+]

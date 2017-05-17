@@ -1,0 +1,60 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* Readme-DemoForLib.txt
+* ic_launcher-web.png
+* proguard-android-optimize.txt
+* proguard\
+* proguard\dump.txt
+* proguard\mapping.txt
+* proguard\seeds.txt
+* proguard\usage.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* libs\arm64-v8a\libmhealth365.so => app\src\main\jniLibs\arm64-v8a\libmhealth365.so
+* libs\arm64-v8a\libTestCallEcg.so => app\src\main\jniLibs\arm64-v8a\libTestCallEcg.so
+* libs\armeabi-v7a\libmhealth365.so => app\src\main\jniLibs\armeabi-v7a\libmhealth365.so
+* libs\armeabi-v7a\libTestCallEcg.so => app\src\main\jniLibs\armeabi-v7a\libTestCallEcg.so
+* libs\armeabi\libmhealth365.so => app\src\main\jniLibs\armeabi\libmhealth365.so
+* libs\armeabi\libTestCallEcg.so => app\src\main\jniLibs\armeabi\libTestCallEcg.so
+* libs\mhealth365-osdk-v1.3.2.jar => app\libs\mhealth365-osdk-v1.3.2.jar
+* libs\mips64\libmhealth365.so => app\src\main\jniLibs\mips64\libmhealth365.so
+* libs\mips64\libTestCallEcg.so => app\src\main\jniLibs\mips64\libTestCallEcg.so
+* libs\mips\libmhealth365.so => app\src\main\jniLibs\mips\libmhealth365.so
+* libs\mips\libTestCallEcg.so => app\src\main\jniLibs\mips\libTestCallEcg.so
+* libs\x86\libmhealth365.so => app\src\main\jniLibs\x86\libmhealth365.so
+* libs\x86\libTestCallEcg.so => app\src\main\jniLibs\x86\libTestCallEcg.so
+* libs\x86_64\libmhealth365.so => app\src\main\jniLibs\x86_64\libmhealth365.so
+* libs\x86_64\libTestCallEcg.so => app\src\main\jniLibs\x86_64\libTestCallEcg.so
+* proguard-android.txt => app\proguard-android.txt
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+* src\心电图图样.png => app\src\main\resources\心电图图样.png
+* src\演示效果图.png => app\src\main\resources\演示效果图.png
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

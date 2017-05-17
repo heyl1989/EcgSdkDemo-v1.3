@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mhealth365.demander.EcgSdkDemo" >
+
+    <item
+        android:id="@+id/datasource"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="数据回顾"/>
+    <item
+        android:id="@+id/smallBrowser"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="无背景网格模式（演示）"/>
+    <item
+        android:id="@+id/action_settings_screen"
+        android:orderInCategory="100"
+        android:title="屏幕尺寸"/>
+
+</menu>

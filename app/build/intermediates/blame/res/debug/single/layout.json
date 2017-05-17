@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ecg_bluetooth.xml",
+        "source": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\layout\\activity_ecg_bluetooth.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\build\\intermediates\\res\\merged\\debug\\layout\\device_element.xml",
+        "source": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\layout\\device_element.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ecg_demo_review.xml",
+        "source": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\layout\\activity_ecg_demo_review.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\build\\intermediates\\res\\merged\\debug\\layout\\relative_layout_bluetooth_2.xml",
+        "source": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\layout\\relative_layout_bluetooth_2.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\build\\intermediates\\res\\merged\\debug\\layout\\device_list.xml",
+        "source": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\layout\\device_list.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\build\\intermediates\\res\\merged\\debug\\layout\\relative_layout_2.xml",
+        "source": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\layout\\relative_layout_2.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\build\\intermediates\\res\\merged\\debug\\layout\\relative_layout_ecg_base.xml",
+        "source": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\layout\\relative_layout_ecg_base.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\build\\intermediates\\res\\merged\\debug\\layout\\relative_layout_acc.xml",
+        "source": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\layout\\relative_layout_acc.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ecg_sdk_demo_register.xml",
+        "source": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\layout\\activity_ecg_sdk_demo_register.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ecg_sdk_demo_login.xml",
+        "source": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\layout\\activity_ecg_sdk_demo_login.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\build\\intermediates\\res\\merged\\debug\\layout\\title_bar.xml",
+        "source": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\layout\\title_bar.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\build\\intermediates\\res\\merged\\debug\\layout\\relative_layout_debug.xml",
+        "source": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\layout\\relative_layout_debug.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ecg_png.xml",
+        "source": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\layout\\activity_ecg_png.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ecg_demo.xml",
+        "source": "D:\\AndroidStudioProjects\\EcgSdkDemo-20161025-v1.3-bj\\app\\src\\main\\res\\layout\\activity_ecg_demo.xml"
+    }
+]
